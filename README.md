@@ -1,4 +1,4 @@
-# My Awesome Project
+# Portfolio
 
 My portfolio showcasing some of my latest projects as well as a little about myself.
 
