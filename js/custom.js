@@ -6,7 +6,27 @@ AOS.init({
 
 $(function(){
 
-	'use strict';
+		'use strict';
+
+		// Initialize Owl Carousel for Craftsmanship Gallery
+		if ($('.owl-carousel').length) {
+				$('.owl-carousel').owlCarousel({
+					loop: true,
+					margin: 10,
+					nav: true,
+					autoplay: true,
+					autoplayTimeout: 3000,
+					autoplayHoverPause: true,
+					responsive: {
+						0: {
+							items: 1
+						},
+						600: {
+							items: 2
+						}
+					}
+				});
+		}
 
 	$(".loader").delay(50).fadeOut("slow");
 	$("#overlayer").delay(50).fadeOut("slow");	
