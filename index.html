@@ -130,18 +130,24 @@
 }
 
 .gallery-cell {
-  width: 66%;
-  height: 360px;
+  width: 50%;
+  height: 273px;
   margin-right: 10px;
-  /* background: #8C8; */
   counter-increment: gallery-cell;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-/* cell number */
+.gallery-cell img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
 .gallery-cell:before {
   display: block;
   text-align: center;
-  /* content: counter(gallery-cell); */
   line-height: 200px;
   font-size: 80px;
   color: white;
@@ -197,7 +203,7 @@
           <strong style="color:#111;">Union Web Solutions, Freelance Full-Stack Engineer</strong>
           <span style="float:right; color:#222; font-size:0.98em;">August 2025 - Present</span>
           <ul style="margin-top:0.5em;">
-            <li>Develop custom web applications and sites using React, Next.js, TypeScript, and Postgres, with headless CMSs such as Payload CMS for content management.</li>
+            <li>Develop custom web applications and sites using React, Next.js, TypeScript, and Postgres, with headless CMSs for content management.</li>
             <li>Implement features including authentication, payments, and content workflows tailored to small and medium-sized businesses.</li>
           </ul>
         </div>
@@ -236,10 +242,10 @@
       <p>
         I was drawn to software development several years ago after realizing how much of a craft it can be. 
         Craftsmanship is a life long passion of mine. My dad is a french chef, and I spent my teenage years working in his kitchen. 
-        I then worked on an apple/peach orchard for 3 years; at that point in my life I began to met so many incredible people, craftsman who openly shared with me their knowledge and passion. I've since done carpentry, cabinetry, furniture making, campervan building, and timber framing!
+        I then worked on an apple/peach orchard for 3 years; at that point in my life I began to met so many incredible people, craftsman who openly shared with me their knowledge and passion. I've since done carpentry, cabinetry, furniture making, campervan building, timber framing, and of course, software development!
         Craftsmanship to me is a mindset of dedication, curiosity, teamwork, and perseverance. It’s creating something with intention and integrity. 
         <br>
-        <br> That same mindset is what excites me about software development. I feel like implementing a new feature or architecting a codebase is a lot like designing a kitchen or a timber frame in some ways &mdash; you take a large complex problem and work your way back, 
+        <br> I feel like implementing a new feature or architecting a codebase is a lot like designing a kitchen or a timber frame in some ways &mdash; you take a large complex problem and work your way back, 
         carefully breaking it down into smaller and smaller parts until it all becomes manageable.
     </section>
     <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
